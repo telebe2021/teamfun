@@ -78,3 +78,14 @@ const { odds: { team1 : team1win, x: draw, team2: team2win } } = game;
 console.log(team1win); 
 console.log(draw);  
 console.log(team2win); 
+// 6.Emsali az olan komanda udma ehtimali coxdur . if else ve ya ternary operatoru yazamadan consola :Birinci komanda udmaga daha yaxindir,
+// ikinci komanda udmaga daha yaxindir yazisini cixardin.
+
+const mes =
+  game.odds.team1 < game.odds.team2
+    ? 'Birinci komanda udmaga daha yaxindir'
+    : game.odds.team1 > game.odds.team2
+    ? 'Ikinci komanda udmaga daha yaxindir'
+    : 'Udmanin qazanmaq ehtimali eynidir';
+
+console.log(mes);
